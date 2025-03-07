@@ -1,0 +1,29 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Alex Korp,3000
+
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,
+Alex Korp,3000
+Nikita Borisenko,dfdsf
+Sitarama Raju,-1000
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,0
+,
+Alex Korp,3.454
+Nikita Borisenko,2000,4
+Sitarama Raju,`
