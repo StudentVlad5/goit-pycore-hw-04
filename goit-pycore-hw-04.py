@@ -214,20 +214,16 @@ python hw03.py /шлях/до/вашої/директорії
 
 Скрипт повинен вивести схожу структуру
 '''
-# Не можу прибрати папки пакетів Файтон - питання до викладача
 import sys
-import os
 from pathlib import Path
 from colorama import init, Fore, Style
-path = Path('D:\IT_courses\GOIT\Python\Pandas')
-
-print("sys.argv", sys.argv)
+path = Path('D:\IT_courses\GOIT\Python\Pandas\joke')
 
 def print_directory_structure(directory, prefix=""):
     try:
         directory = Path(directory)
         if not directory.exists() or not directory.is_dir():
-            print(Fore.RED + "[ERROR] Вказаний шлях не існує або не є директорією." + Style.RESET_ALL)
+            print(Fore.RED + "[ERROR] The path does not exist or is not a directory.." + Style.RESET_ALL)
             return
 
         items = sorted(directory.iterdir(), key=lambda x: (x.is_file(), x.name.lower()))
@@ -242,17 +238,15 @@ def print_directory_structure(directory, prefix=""):
             else:
                 print(Fore.GREEN + prefix + connector + "📜 " + item.name + Style.RESET_ALL)
     except PermissionError:
-        print(Fore.RED + "[ERROR] Доступ заборонено: " + str(directory) + Style.RESET_ALL)
+        print(Fore.RED + "[ERROR] Access is denied: " + str(directory) + Style.RESET_ALL)
 
 def main():
-    init(autoreset=True)  # Ініціалізація colorama
-
-    # Отримуємо шлях з аргументів командного рядка
+    init(autoreset=True) 
     if len(sys.argv) < 2:
         directory = path
     else:    
-        directory = sys.argv[1]  # Отримуємо шлях
-    print(Fore.YELLOW + f"📦 {directory}" + Style.RESET_ALL)  # Виводимо кореневу папку
+        directory = sys.argv[1]  
+    print(Fore.YELLOW + f"📦 {directory}" + Style.RESET_ALL)  
     print_directory_structure(directory)
 
 if __name__ == "__main__":
