@@ -223,11 +223,6 @@ path = Path('D:\IT_courses\GOIT\Python\Pandas')
 
 print("sys.argv", sys.argv)
 
-
-import sys
-from pathlib import Path
-from colorama import init, Fore, Style
-
 def print_directory_structure(directory, prefix=""):
     try:
         directory = Path(directory)
